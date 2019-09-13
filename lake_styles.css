@@ -1,0 +1,102 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Joel Mendivil
+   Date: 9/13/19
+   
+   Filename: lake_styles.css
+
+*/
+@charset "utf-8";
+@font-face{
+   font-family: Champagne;
+   src: url(cac_champagne.ttf) format('ttf'),
+   url(cac_champagne.woff) format('woff'),
+   url(cac_champagne.woff2) format('woff2');
+}
+@font-face{
+   font-family: Dobkin;
+   src: url(DobkinPlain.ttf) format('ttf'),
+   url(DobkinPlain.woff) format('woff'),
+   url(DobkinPlain.woff2) format('woff2');
+}
+/* Structural Styles */
+html{
+   background-color: rgb(158, 151, 112);
+}
+body{
+   background-color: blanchedalmond;
+   color: brown;
+  font-family: 'Times New Roman', Times, sans-serif; 
+}
+header{
+   background-color: purple;
+}
+/* Heading Styles */
+
+/* Navigation Styles */
+header > nav > ul > li a{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-family: sans-serif;
+}
+header > nav > ul > li a:link{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+}
+header > nav > ul > li a:visited{
+   color: rgb(255, 255, 255));
+   text-decoration: none;
+}
+header > nav > ul > li a:hover{
+   color: rgb(195, 119, 224);
+   text-decoration: underline;
+}
+header > nav > ul > li a:active{
+   color: rgb(195, 119, 224);
+   text-decoration: underline;
+}
+/* Section Styles */
+section#leftcol > h1{
+   font-size: 35px;
+   font-family: 'Champagne', 'Dobkin', sans-serif;
+}
+/* Article Styles */
+
+/* Aside Styles */
+section#rightcol{
+   background-color: rgb(195, 119, 224);
+   color: white;
+}
+section#rightcol > nav > h2{
+   font-family: 'Champagne', 'Dobkin', sans-serif;
+   font-size: 30px;
+}
+section#rightcol nav > ul > li{
+   list-style-type: upper-roman;
+   color: purple;
+}
+/* Footer Styles */
+footer{
+   background-color: purple;
+   color: white;
+   text-align: center;
+   word-spacing: 5px;
+}
+/* Blockquote Styles */
+section > blockquote{
+   color: white;
+   opacity: 0.65;
+   padding: 2.5px, 10px, 2.5px, 10px; 
+}
+section > blockquote::before{
+   content: open-quote;
+   font-size: 1.5em;
+}
+section > blockquote::after{
+   content: close-quote;
+   font-size: 1.5em;
+}

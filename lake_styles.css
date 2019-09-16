@@ -35,8 +35,6 @@ body{
 header{
    background-color: purple;
 }
-/* Heading Styles */
-
 /* Navigation Styles */
 header > nav > ul > li a{
    color: rgb(255, 255, 255);
@@ -78,6 +76,17 @@ section#rightcol > nav > h2{
 section#rightcol nav > ul > li{
    list-style-type: upper-roman;
    color: purple;
+}
+aside > h1{
+   font-family: 'Champagne', 'Dobkin', sans-serif;
+   font-size: 2em;
+}
+aside{
+   background-color: rgb(255, 128, 128);
+   color: black;
+}
+aside:nth-of-type(2){
+   background-color: rgb(185, 176, 96);
 }
 /* Footer Styles */
 footer{
